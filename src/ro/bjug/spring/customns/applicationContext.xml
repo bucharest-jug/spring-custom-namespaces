@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.bjug.ro/schema/customns"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd http://www.bjug.ro/schema/customns http://www.bjug.ro/schema/customns.xsd">
+    
+    <bean id="config1" class="ro.bjug.spring.customns.Configuration">
+        <property name="user" value="root"/>
+        <property name="password" value="changeit"/>
+        <property name="server" value="127.0.0.1"/>
+    </bean>
+    
+    <c:configuration id="config2" user="root" password="changeit" server="127.0.0.1"/>
+</beans>
